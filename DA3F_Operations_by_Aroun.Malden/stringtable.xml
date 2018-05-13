@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="°Opération° by [DA3F]Aroun Le BriCodeur">
+    <Package name="°Opération°">
+        <Key ID="DA3F_WelcomeChat">
+            <Original>Welcome to the mission Aroun's °Opération° 'Aroun Le BriCodeur' for the Arma 3 Community</Original>
+            <French>Bienvenue sur la mission : °Opération° réalisé par : Aroun Le BriCodeur pour la communauté Arma 3</French>
+        </Key>
+        <Key ID="DA3F_WelcomeTitle">
+            <Original>Welcome to the mission Aroun's °Opération° 'Aroun Le BriCodeur' for the Arma 3 Community</Original>
+            <French>Bienvenue sur la mission :\n°Opération°\n réalisé par : \nAroun Le BriCodeur\n pour la communauté Arma 3</French>
+        </Key>
+        <Key ID="DA3F_PlayerSpawnInfo">
+            <Original>Action: windows left \n\n Player menu: ² (above TAB) \n\n Lower volume: 8 _ \ \n\n Turn up the volume: 9 ç ^\n\nGood Game</Original>
+            <French>Action : windows gauche \n\n Menu player : ² (au dessus de TAB) \n\nBaisser le volume : 8 _ \ \n\n Monter le volume : 9 ç ^</French>
+        </Key>
+        <Key ID="DA3F_NotUseShop">
+            <Original>You are not allowed to use this shop</Original>
+            <French>Tu n'es pas autorisé à utiliser ce shop</French>
+        </Key>
+        <Key ID="STR_DA3F_ClearMyBasket">
+            <Original>empty my cart</Original>
+            <French>vider mon panier</French>
+        </Key>
+        <Key ID="STR_DA3F_RemoveArt">
+            <Original>remove the article</Original>
+            <French>retirer l'article</French>
+        </Key>
+        <Key ID="STR_DA3F_ValidBuy">
+            <Original>Validate my purchases</Original>
+            <French>Valider mes achats</French>
+        </Key>
+        <Key ID="DA3F_NotCash">
+            <Original>You're missing cash guy</Original>
+            <French>Tu manque de cash mec</French>
+        </Key>
+        <Key ID="DA3F_VeryStupid">
+            <Original>Damn but you're really stupid !! &lt;br/&gt; You can not add this items</Original>
+            <French>Putain mais tu es vraiment trop con !! &lt;br/&gt; Tu ne peux pas ajouter cet items</French>
+        </Key>
+        <Key ID="STR_DA3F_WarningReloadStats">
+            <Original>Warning !! &lt;br/&gt; You will put all your data to zero ! &lt;br/&gt; are you sure you want to do this action</Original>
+            <French>ATTENTION !! &lt;br/&gt; Tu vas mettre toutes tes données à zéro !&lt;br/&gt; Es-tu sure de vouloir faire cette action</French>
+        </Key>
+        <Key ID="STR_DA3F_ReloadStatsSucces">
+            <Original>reset successfully effected !</Original>
+            <French>réinitialisation effetué avec succès !</French>
+        </Key>
+        <Key ID="STR_DA3F_ReloadMyStats">
+            <Original>Reset my data</Original>
+            <French>Ré-initialiser mes données</French>
+        </Key>
+        <Key ID="DA3F_NotYourVeh">
+            <Original>The nearest vehicle is not yours</Original>
+            <French>Le véhicule le plus proche n'est pas à toi</French>
+        </Key>
+        <Key ID="DA3F_SpawnJobEntrep">
+            <Original>You have just arrived at the company</Original>
+            <French>Vous venez d'arriver à l'entreprise</French>
+        </Key>
+        <Key ID="DA3F_SpawnJobCoope">
+            <Original>You have just arrived at the cooperative</Original>
+            <French>Vous venez d'arriver à la coopérative</French>
+        </Key>
+        <Key ID="DA3F_BuyVehSucces">
+            <Original>Purchase of the vehicle successfully</Original>
+            <French>Achat du véhicule avec succès</French>
+        </Key>
+        <Key ID="DA3F_SpawnMyVeh">
+            <Original>Your vehicle is waiting for you</Original>
+            <French>Votre véhicule vous attends</French>
+        </Key>
+        <Key ID="DA3F_VehInGarageSucces">
+            <Original>Your vehicle is in the garage</Original>
+            <French>Votre véhicule est au garage</French>
+        </Key>
+        <Key ID="DA3F_VehInGarageFail">
+            <Original>An error has occurred! \n Not possible to enter this vehicle</Original>
+            <French>Une erreur est arrivé !\nImpossible de rentrer ce véhicule</French>
+        </Key>
+        <Key ID="DA3F_VehNoSelect">
+            <Original>Please select a vehicle</Original>
+            <French>Veuillez sélectionner un véhicule</French>
+        </Key>
+        <Key ID="DA3F_ItemNoSelect">
+            <Original>Please select a item</Original>
+            <French>Veuillez sélectionner un item</French>
+        </Key>
+        <Key ID="DA3F_QuantitNoSelect">
+            <Original>Please select a number</Original>
+            <French>Veuillez sélectionner une quantité</French>
+        </Key>
+        <Key ID="DA3F_WelcomeMyShop">
+            <Original>Hello : %1\nWelcome to my shop</Original>
+            <French>Bonjour : %1\nBienvenue dans ma boutique</French>
+        </Key>
+        <Key ID="STR_DA3F_NotLevel">
+            <Original>You do not have the required level for this purchase</Original>
+            <French>Tu n'as pas le niveau requis pour cet achat</French>
+        </Key>
+        <Key ID="DA3F_SaveSucces">
+            <Original>Backing up your data successfully</Original>
+            <French>Sauvgarde de vos données avec succès</French>
+        </Key>
+        <Key ID="STR_DA3FValideMission">
+            <Original>Launch the mission</Original>
+            <French>Lancer la mission</French>
+        </Key>
+        <Key ID="STR_DA3FCloseGui">
+            <Original>Close</Original>
+            <French>Fermer</French>
+        </Key>
+        <Key ID="STR_DA3F_Mrk_MedicCenter">
+            <Original>Medical&#8209;center</Original>
+            <French>Centre&#8209;médical</French>
+        </Key>
+        <Key ID="STR_DA3FMrk_GCAir">
+            <Original>Air&#8209;&#8209;Concess&#8209;Garage</Original>
+            <French>Concess&#8209;Garage&#8209;&#8209;aérien</French>
+        </Key>
+        <Key ID="DA3F_NoVeh">
+            <Original>You do not have any vehicles</Original>
+            <French>Tu ne dispose d'aucun véhicule</French>
+        </Key>
+        <Key ID="DA3F_CloseVeh">
+            <Original>Closing your vehicle</Original>
+            <French>Fermeture du véhicule</French>
+        </Key>
+        <Key ID="DA3F_OpenVeh">
+            <Original>Opening your vehicle</Original>
+            <French>Ouverture du véhicule</French>
+        </Key>
+        <Key ID="DA3F_NotPossible">
+            <Original>This action is not possible</Original>
+            <French>Cette action n'est pas possible</French>
+        </Key>
+        <Key ID="DA3F_Mrk_Txt_Op_Center">
+            <Original>Operation Center</Original>
+            <French>Centre&#8209;d'opération</French>
+        </key>
+        <Key ID="STR_DA3F_Mrk_GarageAnd_Concess_Car">
+            <Original>Car&#8209;Concess&#8209;Garage</Original>
+            <French>Concess&#8209;Garage&#8209;terrestre</French>
+        </Key>
+        <Key ID="STR_DA3F_Mission_Vip">
+            <Original>Vip&#8209;Escort</Original>
+            <French>Escorte&#8209;de&#8209;vip</French>
+        </Key>
+        <Key ID="STR_DA3F_Mission_Boom">
+            <Original>Put&#8209;a&#8209;bomb</Original>
+            <French>Poser&#8209;une&#8209;bombe</French>
+        </Key>
+        <Key ID="STR_DA3F_Mrk_Garage_Car">
+            <Original>Car&#8209;garage</Original>
+            <French>Garage&#8209;terrestre</French>
+        </Key>
+        <Key ID="STR_DA3F_Mrk_Garage_Air">
+            <Original>Air&#8209;garage</Original>
+            <French>Garage&#8209;aérien</French>
+        </key>
+        <Key ID="STR_DA3F_Mrk_GarageAnd_Concess_All">
+            <Original>All Concess/Garage</Original>
+            <French>Concess/Garage | terrestre/aérien</French>
+        </key>
+    </Package>
+</Project>
