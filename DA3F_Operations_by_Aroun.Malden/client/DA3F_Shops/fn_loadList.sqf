@@ -39,7 +39,7 @@
 		private _DA3F_Exit		= false;
 		private _DA3F_Colors	= false;
 
-		systemChat str [_DA3F_Class,_DA3F_Condition,_DA3F_listItems];
+		//systemChat str [_DA3F_Class,_DA3F_Condition,_DA3F_listItems];
 
 		if !(_DA3F_Condition isEqualTo "") then {
 			_DA3F_Condition = call compile format ["%1",_DA3F_Condition];

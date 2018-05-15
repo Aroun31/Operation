@@ -12,4 +12,6 @@ class fnc_Objectifs
 	class init_Array_Pos {};
 	class Pos_Mission_Start {};
 	class Pos_Mission_End {};
+	class cleanMission {};
+	class add_Xp {};
 };

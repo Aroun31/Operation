@@ -100,7 +100,8 @@
 		}];
 			// this is server version
 			player setVariable ["DA3F_Mrk_SpawnVeh",_DA3F_MrkSp,true];
-			[player,_DA3F_ClassName,getMarkerPos _DA3F_MrkSp,_DA3F_PriceSell,"µ",true,[]] remoteExec ["DA3F_fnc_Create_Veh",2];
+			//[player,_DA3F_ClassName,getMarkerPos _DA3F_MrkSp,_DA3F_PriceSell,"µ",true,[]] remoteExec ["DA3F_fnc_Create_Veh",player];
+			[player,_DA3F_ClassName,getMarkerPos _DA3F_MrkSp,_DA3F_PriceSell,"µ",true,[]] spawn DA3F_fnc_Create_Veh;
 
 			//next Only work version !
 			/*
@@ -126,4 +127,5 @@
 
 	} forEach _DA3F_ListItems;
 	DA3F_TotalMyPanier = 0;
+		missionNamespace setVariable ["DA3F_My_Panier",[[],[]]];
 closeDialog 0;

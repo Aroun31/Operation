@@ -21,6 +21,10 @@
             <Original>empty my cart</Original>
             <French>vider mon panier</French>
         </Key>
+        <Key ID="STR_DA3F_NameMission">
+            <Original>°Opération° by [DA3F] Aroun Le BriCodeur</Original>
+            <French>°Opération° by [DA3F] Aroun Le BriCodeur</French>
+        </Key>
         <Key ID="STR_DA3F_RemoveArt">
             <Original>remove the article</Original>
             <French>retirer l'article</French>
@@ -148,6 +152,10 @@
         <Key ID="STR_DA3F_Mission_Boom">
             <Original>Put&#8209;a&#8209;bomb</Original>
             <French>Poser&#8209;une&#8209;bombe</French>
+        </Key>
+        <Key ID="STR_DA3F_ChefRebel">
+            <Original>Rebel&#8209;leader</Original>
+            <French>Chef&#8209;Rebelle</French>
         </Key>
         <Key ID="STR_DA3F_Mrk_Garage_Car">
             <Original>Car&#8209;garage</Original>

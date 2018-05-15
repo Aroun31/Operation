@@ -16,7 +16,8 @@ class CfgRemoteExec {
             mode = 1;
             jip = 0;
         /* DA3F Mission °Opération° */
-            F(DA3F_fnc_Create_Veh,SERVER)
+            F(DA3F_fnc_Create_Veh,ANYONE)
+            F(DA3F_fnc_add_Xp,CLIENT)
         /* fnc BIS */
             F(bis_fnc_reviveinitaddplayer,ANYONE)
             F(bis_fnc_execvm,ANYONE)

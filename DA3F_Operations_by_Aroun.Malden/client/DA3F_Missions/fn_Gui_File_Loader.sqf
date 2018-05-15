@@ -38,10 +38,11 @@
     } forEach [
         localize "STR_DA3F_Mission_Vip",
         localize "STR_DA3F_Mission_Boom",
+        localize "STR_DA3F_ChefRebel",
         "Random"
     ];
 
     _DA3F_Valide ctrlSetStructuredText parseText format ["<img align='left' image='%1'/><t align='center'>%2</t>", _DA3F_PathVal,localize "STR_DA3FValideMission"];
     _DA3F_Close ctrlSetStructuredText parseText format ["<img align='left' image='%1'/><t align='center'>%2</t>", _DA3F_PathClose,localize "STR_DA3FCloseGui"];
 
-    _DA3F_TxtInfo ctrlSetStructuredText parseText format ["<img align='left' image='%1'/><t size='1.2'>Info :</t><br/><t align='center' size='0.9' >Info :</t>", _DA3F_PathInfo];
+    _DA3F_TxtInfo ctrlSetStructuredText parseText format ["<img align='left' image='%1'/><t size='1.2'>Info :</t><br/><t align='center' size='0.9' >...</t>", _DA3F_PathInfo];

@@ -47,7 +47,9 @@ class Header
 //#include "client\DA3F_BCC\DA3F_Gui_BCC.hpp"
 
 // En cas de GUI title
-    class RscTitles {};
+    class RscTitles {
+         #include "client\DA3F_Dialog\DA3F_Title_Master.hpp"
+    };
 
 class CfgFunctions {
     #include "DA3F_functions_Master.hpp"

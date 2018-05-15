@@ -21,8 +21,10 @@
     *
 	*/
     
+    #define DA3F_CfgMission(TYPE,STATS)   TYPE(missionConfigFile >> "DA3F_initCfg_Mission" >> STATS)
     #define DA3F_CfgSpawn(TYPE,STATS)   TYPE(missionConfigFile >> "DA3F_initCfg_Spawn" >> STATS)
     #define Cfg_Veh_A3(TYPE,Class,SETTING) TYPE(ConfigFile >> "CfgVehicles" >> Class >> SETTING)
+    #define Cfg_Weapon_A3(TYPE,Class,SETTING) TYPE(ConfigFile >> "CfgWeapons" >> Class >> SETTING)
     #define Cfg_ShopWeapons(TYPE,SECTION,Class,SETTING) TYPE(missionConfigFile >> "Cfg_Shops_Weapons" >> SECTION >> Class >> SETTING)
 
     #define My_Ctrl(disp,ctrl) ((findDisplay ##disp) displayCtrl ##ctrl) 

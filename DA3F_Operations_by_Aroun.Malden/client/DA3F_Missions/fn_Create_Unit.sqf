@@ -83,7 +83,7 @@ if ((count (nearestObjects [getPos DA3F_Bob,["building"],20])) isEqualTo 0) then
     DA3F_Bob setPosASLW [_axx,_axy,(_axz + 2)];
 };
 
-waitUntil {isTouchingGround DA3F_Bob};
+//waitUntil {isTouchingGround DA3F_Bob};
 DA3F_Bob allowDamage true;
-player setpos getPos DA3F_Bob;
+//player setpos getPos DA3F_Bob;
 _DA3F_Valide = true;

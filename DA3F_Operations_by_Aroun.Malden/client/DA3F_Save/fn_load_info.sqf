@@ -39,7 +39,12 @@
                 profileNamespace setVariable ["DA3F_Stats_Life",[(damage player),100,100,DA3F_Cash,DA3F_Bank]];
             },{
             DA3F_Stats_Life = profileNamespace getVariable "DA3F_Stats_Life";
-            player setDamage((DA3F_Stats_Life) select 0);
+            private _DA3F_DmgPlayer = 0;
+            _DA3F_DmgPlayer = ((DA3F_Stats_Life) select 0);
+                if (_DA3F_DmgPlayer >= 0.95) then {
+                    _DA3F_DmgPlayer = 0.75;
+                };
+            player setDamage(_DA3F_DmgPlayer);
             DA3F_Faim = DA3F_Stats_Life select 1;
             DA3F_Soif = DA3F_Stats_Life select 2;
             DA3F_Cash = DA3F_Stats_Life select 3;

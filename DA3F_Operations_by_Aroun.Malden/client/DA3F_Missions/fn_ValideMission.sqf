@@ -49,6 +49,12 @@
                  scriptName _MissionSelect;
                 _MissionLoad    = execVM _MissionSelect;
             };
+
+            case (["Rebel",_DA3F_title]call bis_fnc_inString): {
+                 _MissionSelect = format [_DA3F_PathFile, 3];
+                 scriptName _MissionSelect;
+                _MissionLoad    = execVM _MissionSelect;
+            };
         };
 
     diag_log str ["Mission Load : ",_MissionLoad];

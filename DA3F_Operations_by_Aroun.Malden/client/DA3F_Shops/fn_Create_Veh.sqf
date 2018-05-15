@@ -57,7 +57,9 @@
 */
     private _DA3F_plak  = "";
     private _DA3F_mrk   = player getVariable ["DA3F_Mrk_SpawnVeh",""];
-	private _veh = _DA3F_ClassName createVehicle [0,0,500];
+    private _veh = createVehicle [_DA3F_ClassName, [0,0,500], [], 0, "NONE"];
+//	private _veh = _DA3F_ClassName createVehicle [0,0,500];
+
 			_veh allowDamage false;
 			_veh setPosATL _DA3F_Pos;
             _veh lock 0;

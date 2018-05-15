@@ -36,10 +36,16 @@
 				private _DA3F_Value 	= _DA3F_ListQuantit select _foreachindex;
 
 					_DA3F_RealName 	= (getText(ConfigFile >> "CfgWeapons" >> _DA3F_item >> "displayName"));
+
 						if (_DA3F_RealName isEqualTo "") then {
 							_DA3F_RealName 	= (getText(ConfigFile >> "CfgMagazines" >> _DA3F_item >> "displayName"));
 						};
 
+						if (_DA3F_RealName isEqualTo "") then {
+							_DA3F_RealName 	= (getText(ConfigFile >> "CfgVehicles" >> _DA3F_item >> "displayName"));
+						};
+
 					_DA3F_ListPanier lbAdd format ["[x%1] %2",_DA3F_Value, _DA3F_RealName];
 					_DA3F_ListPanier lbSetData [(lbSize _DA3F_ListPanier)-1,str([_DA3F_item,_DA3F_Value])];
+
 			} forEach _DA3F_ListItems;

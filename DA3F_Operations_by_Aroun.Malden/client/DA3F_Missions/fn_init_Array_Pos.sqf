@@ -24,7 +24,7 @@
 
 //////////////////////////
     private _DA3F_PosNear_Altis = [[7113.64,11581.1],[7420.49,18716.6],[16671.4,20076.9],[19768.8,10607.6],[25963.7,21315.8]];
-    private _DA3F_PosNear_Malden = [[4552.87,9493.88],[6025.89,4147.85]];
+    private _DA3F_PosNear_Malden = [[5454.63,7203.13],[2824.75,2668.5],[6489.13,4573.25],[6547.25,9939.38]];
     private _DA3F_PosNear_Tanoa = [[4647.8,9930.04],[5165.9,3423.38],[11916.4,6135.76],[10392.6,11408.1]];
 /*
     Posez plusieurs mrk radius de 5000m pour recouvrir grossièrement
@@ -47,7 +47,7 @@
 
         if (str _DA3F_Pos isEqualTo "[]") exitWith {};
 
-      allLocationTypes = ["Mount","Name","CityCenter","Airport","NameMarine","NameCityCapital","NameCity","NameVillage","NameLocal","Hill","ViewPoint","RockArea"];
+      allLocationTypes = ["Name","CityCenter","Airport","NameMarine","NameCityCapital","NameCity","NameVillage","NameLocal"];
 
       DA3F_All_Pos_Map = [];
 
@@ -59,7 +59,7 @@
                   if !(_DA3F_posLoc in DA3F_All_Pos_Map) then {
                       DA3F_All_Pos_Map set [count DA3F_All_Pos_Map,_DA3F_posLoc];
                   };
-              } forEach nearestLocations [_DA3F_posi, allLocationTypes, 5000];
+              } forEach nearestLocations [_DA3F_posi, allLocationTypes, 2500];
           } forEach _DA3F_Pos;
 
   publicVariable "DA3F_All_Pos_Map";
