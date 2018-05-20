@@ -47,7 +47,7 @@
 
         if (str _DA3F_Pos isEqualTo "[]") exitWith {};
 
-      allLocationTypes = ["Name","CityCenter","Airport","NameMarine","NameCityCapital","NameCity","NameVillage","NameLocal"];
+      allLocationTypes = ["CityCenter","Airport","NameMarine","NameCityCapital","NameCity","NameVillage","NameLocal"];
 
       DA3F_All_Pos_Map = [];
 

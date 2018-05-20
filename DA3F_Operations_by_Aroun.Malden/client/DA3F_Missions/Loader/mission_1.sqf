@@ -21,7 +21,13 @@
     *
 	*/
 
-private _DA3F_PosStart = call DA3F_fnc_Pos_Mission_Start;
+private _DA3F_PosStart = [];
+
+	waitUntil {
+			sleep 0.1;
+			_DA3F_PosStart = call DA3F_fnc_Pos_Mission_Start;
+			!(surfaceIsWater _DA3F_PosStart)
+		};
 scriptName "mission 1";
 _DA3F_Unit_Bot = [_DA3F_PosStart,side player,0.7,"MAJOR"]spawn DA3F_fnc_Create_Unit;
 diag_log str ["Unité créé pour : ",_DA3F_Unit_Bot];
@@ -32,12 +38,12 @@ diag_log str ["Unité créé pour : ",_DA3F_Unit_Bot];
 		scriptDone _DA3F_Unit_Bot
 	};
 
-	DA3F_Bob setCaptive true;
+ 	DA3F_Bob setCaptive true;
 	private _DA3F_CountUnit = 0;
 	private _DA3F_UnitProxy = objNull;
 	private _arrPlayer 		= [];
 		[position DA3F_Bob,"VIP","hd_dot","ColorYellow",side player,"true"] call DA3F_fnc_Create_Marker;
-		[getPosASLW DA3F_Bob,0,(5 + (ceil random 3)),250,110]spawn DA3F_fnc_Spawn_hostile;
+		[getPosASLW DA3F_Bob,0,(5 + (ceil random 3)),100,110]spawn DA3F_fnc_Spawn_hostile;
 		waitUntil
 		{
 		sleep 0.01;
@@ -76,13 +82,14 @@ diag_log str ["Unité créé pour : ",_DA3F_Unit_Bot];
 					!(alive DA3F_Bob) || (DA3F_Bob distance _DA3F_Pos_End_Or_Desti)< 10
 				};
 
+				{
+					deleteMarker _x;
+				} forEach DA3F_Stock_Mrk_Mission;
+
 				if !(alive DA3F_Bob) exitWith {
 					[format ["Le Vip %1\nest mort !\nLa mission est un échec", name DA3F_Bob]] remoteExecCall ["hint",0];
 				};
 
-				{
-					deleteMarker _x;
-				} forEach DA3F_Stock_Mrk_Mission;
 
 			hint format ["%1 à quitté le groupe", name DA3F_Bob];
 

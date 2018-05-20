@@ -20,7 +20,13 @@
 	*               -------------
 	*
 	*/
+
 		#include "DA3F_Define.hpp"
-		#include "DA3F_GUI_Spawn.hpp"
+		//#include "DA3F_GUI_Spawn.hpp"
+		#include "DA3F_GUI_Spawn_New.hpp"
 		#include "DA3F_ShopWeapon.hpp"
 		#include "DA3F_GUI_LoadObjectif.hpp"
+		#include "DA3F_GUI_Garage.hpp"
+		#include "DA3F_GUI_PlayerMenu.hpp"
+		#include "DA3F_GUI_MedicalMenu.hpp"
+		#include "DA3F_GUI_Atm.hpp"

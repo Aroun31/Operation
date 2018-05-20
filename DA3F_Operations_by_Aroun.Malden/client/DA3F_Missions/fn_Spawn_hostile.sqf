@@ -60,7 +60,7 @@
 		private _DA3F_distance			= 120;
 */
 		private _DA3F_Pos 				= [];
-		private _DA3F_Look_Mrk 			= true;
+		private _DA3F_Look_Mrk 			= false;
 		private _DA3F_AllClass 			= [];
 
 			_this params[
