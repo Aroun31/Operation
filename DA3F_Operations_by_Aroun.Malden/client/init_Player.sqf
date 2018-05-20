@@ -23,7 +23,9 @@
     */
 
 
+
     //player addEventHandler ["killed",{_this spawn{DA3F_Death = true}}];
 
             []spawn DA3F_fnc_autoSave;
-            []spawn DA3F_fnc_init_SpawnMenu;
+          //  []spawn DA3F_fnc_init_SpawnMenu;
+            []spawn DA3F_fnc_playerEH;

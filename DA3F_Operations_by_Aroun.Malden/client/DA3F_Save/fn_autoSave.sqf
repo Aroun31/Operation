@@ -41,6 +41,7 @@
 
 //        private _DA3F_Inv = (([_DA3F_Unit]call bis_fnc_invString) + (items _DA3F_Unit) + (assignedItems _DA3F_Unit) + (weapons _DA3F_Unit) + (magazines _DA3F_Unit));
         private _DA3F_Inv = getUnitLoadout player;
+
         /*
             private _DA3F_inventory = [[],[]];
 
@@ -61,6 +62,7 @@
                 } forEach _DA3F_Inv;*/
 
             profileNamespace setVariable ["DA3F_Inventory_Unit",_DA3F_Inv];
+            [player, [profileNamespace, "DA3F_MyInventory"]] call BIS_fnc_saveInventory;
             //DA3F_Inventory = profileNamespace getVariable "DA3F_Inventory_Unit";
 
             profileNamespace setVariable ["DA3F_InvVirt",player getVariable ["DA3F_InvVirtUnit",[]]];

@@ -20,6 +20,18 @@
     *               _this call DA3F_fnc_SpawnConfirme;
     *
 	*/
+#include "fn_SpawnConfirme.hpp"
+    DA3F_fnc_DeleteCams={
+
+        if !(isNil "DA3F_CAM_MRK") then {
+            DA3F_CAM_MRK cameraEffect ["terminate","back"];
+            camDestroy DA3F_CAM_MRK;
+        };
+        if !(isNil "DA3F_CAM_UNIT") then {
+            DA3F_CAM_UNIT cameraEffect ["terminate","back"];
+            camDestroy DA3F_CAM_UNIT;
+        };
+    };
 
 	params[["_DA3F_Ctrl",controlNull,[controlNull]]];
 
@@ -52,5 +64,6 @@
             "" cutText ["Parcours jusqu'à la position","WHITE IN",5];
             sleep 4;
             "" cutText [format ["Spawn en position :\n\n%1", _DA3F_InfoPosGPS],"PLAIN DOWN",5];
+
 	    };
 	};

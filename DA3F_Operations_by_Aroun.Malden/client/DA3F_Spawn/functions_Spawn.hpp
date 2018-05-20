@@ -4,5 +4,6 @@ class DA3F_fnc_Spawn
 	class init_SpawnMenu {};
 	class SelectSpawnMap {};
 	class SpawnConfirme {};
+	class SpawnCamera {};
 	class BackLobby {};
 };

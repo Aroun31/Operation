@@ -23,15 +23,15 @@
 	*/
 
 
-	if !(createDialog "DA3F_GUI_Spawn") exitWith {};
+	if !(createDialog "DA3F_GUI_Spawn_New") exitWith {};
 		"" cutText ["","BLACK FADED"];
-		private _DA3F_Display 	= (findDisplay 1090518);
-		private _DA3F_Map 		= My_Ctrl(1090518,31400);
-		private _DA3F_ListMrk 	= My_Ctrl(1090518,1500);
-		private _DA3F_ListUnit 	= My_Ctrl(1090518,1501);
-		private _DA3F_SpawnMrk 	= My_Ctrl(1090518,2400);
-		private _DA3F_SpawnUnit	= My_Ctrl(1090518,2401);
-		private _DA3F_BackLobby	= My_Ctrl(1090518,2402);
+		private _DA3F_Display 	= (findDisplay 190518);
+		private _DA3F_Map 		= My_Ctrl(190518,2900);
+		private _DA3F_ListMrk 	= My_Ctrl(190518,1500);
+		private _DA3F_ListUnit 	= My_Ctrl(190518,1501);
+		private _DA3F_SpawnMrk 	= My_Ctrl(190518,2400);
+		private _DA3F_SpawnUnit	= My_Ctrl(190518,2401);
+		private _DA3F_BackLobby	= My_Ctrl(190518,2402);
 
 		private _DA3F_ArrSpawn = DA3F_CfgSpawn(getArray,"DA3F_List_Spawn");
  		//systemChat str [_DA3F_ArrSpawn];
@@ -56,7 +56,7 @@
 					};
 				};
 			};
-		} forEach ((units DA3F_Grp_Player)-[player]);
+		} forEach ((units (group player))-[player]);
 
 		[_DA3F_Display]spawn{
 		disableSerialization;
@@ -73,7 +73,7 @@
 				_DA3F_MrkPosUnit setMarkerColorLocal "ColorGreen";
 				_DA3F_MrkPosUnit setMarkerTextLocal format ["%1", name _x];
 				_DA3F_AttachMrk pushBack [_x,_DA3F_MrkPosUnit];
-				} forEach ((units DA3F_Grp_Player)-[player]);
+				} forEach ((units (group player))-[player]);
 
 			while {!(isNull (_this select 0))} do {
 				{
@@ -94,6 +94,7 @@
 				}forEach _DA3F_AttachMrk;
 				sleep 0.001;
 			};
+			DA3F_LoopActiv = false;
 	};
 
 

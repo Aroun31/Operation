@@ -10,15 +10,15 @@
     *               [DA3F] Aroun Le BriCodeur
     *
     *       File :
-    *           fn_Action_OpertionCenter.sqf
+    *           fn_PNJ_Car.sqf
     *
     *       DESCRIPTION :
     *               -------------
     *       ARGUMENTS :
     *               -------------
     *       EXEMPLES :
-    *               this call DA3F_fnc_Action_OpertionCenter;
+    *               this call DA3F_fnc_PNJ_Weapons;
     *
 	*/
 
-	_this addAction ["Armurerie",DA3F_fnc_initShop,"DA3F_PNJ_Default",0,true,false,"","_this distance _target < 5 && !(isNull _target)"];
+	_this addAction ["Concessionnaire",DA3F_fnc_initShop,"DA3F_PNJ_Weapons",0,true,false,"","_this distance _target < 5 && !(isNull _target)"];

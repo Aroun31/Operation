@@ -21,7 +21,7 @@
     *
     */
 
-        DA3F_Active_debug = true;
+        DA3F_Active_debug = false;
 
 
         DA3F_Action     = false;
@@ -37,7 +37,8 @@
         DA3F_poids      = 0;
         DA3F_poidMaxInv = 100;
         DA3F_TotalMyPanier = 0;
-        player setVariable ["DA3F_isComa",false,false];
+        player setVariable ["DA3F_isComa",false,true];
+        Roger setVariable ["DA3F_isComa",false,true];
 
             missionNamespace setVariable ["DA3F_My_Panier",[[],[]]];
             missionNamespace setVariable ["DA3F_My_StockUsine",[[],[]]];

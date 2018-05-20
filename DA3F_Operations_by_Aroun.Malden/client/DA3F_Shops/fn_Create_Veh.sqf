@@ -65,7 +65,6 @@
             _veh lock 0;
             [_veh]call DA3F_fnc_ClearObj;
             _veh setdir (markerDir _DA3F_mrk);
-
     if (_DA3F_NewVeh) then {
         [_veh,_DA3F_Prix_vente] remoteExecCall ["DA3F_fnc_loadInfoVeh",_DA3F_Unit];
     };

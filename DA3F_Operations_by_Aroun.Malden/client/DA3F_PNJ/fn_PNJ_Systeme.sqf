@@ -20,6 +20,7 @@
     *               -------------
     *
 	*/
+
 	"DA3F_mrk_PNJ_Sys" setMarkerPos getPos _this;
 	_this disableAI "all";
 	_this addAction [localize"STR_DA3F_ReloadMyStats",{
@@ -33,4 +34,4 @@
         profileNamespace setVariable ["DA3F_MyGarage",nil];
         saveProfileNamespace;
         hint localize "STR_DA3F_ReloadStatsSucces";
-}];
+},"",0,true,false,"","_this distance _target < 5 && !(isNull _target)"];

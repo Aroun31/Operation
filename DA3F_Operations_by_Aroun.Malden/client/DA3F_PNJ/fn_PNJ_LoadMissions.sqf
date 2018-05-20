@@ -21,5 +21,6 @@
     *
 	*/
 
-    _this addAction ["Mission",DA3F_fnc_init_Loader];
-//	_this addAction ["GUI BCC",DA3F_fnc_init_loadGui];
+    _this addAction ["Mission",DA3F_fnc_init_Loader,"",0,true,false,"","_this distance _target < 5 && !(isNull _target)"];
+    //_this addAction ["GUI BCC",DA3F_fnc_init_loadGui];
+

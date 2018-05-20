@@ -4,4 +4,8 @@
 		class Action_OpertionCenter	{};
 		class PNJ_Systeme {};
 		class PNJ_LoadMissions {};
+		class PNJ_Car {};
+		class PNJ_Air {};
+		class PNJ_Weapons {};
+		class PNJ_Medic {};
 	};
