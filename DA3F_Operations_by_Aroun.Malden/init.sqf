@@ -20,7 +20,14 @@
     *               -------------
     *
     */
-
+    /*
+        Pour une explication sur l'édition de la mission rendez vous dans le fichier :
+        LISEZ MOI.txt
+    */
+    /*
+        Merci de prendre contact avec moi si vous souhaitez sortir des scripts de la mission.
+        Il sera considéré comme vol toute utilisation de mon travail hors de la mission, sans mon accord !
+    */
     0 execVM "client\init_Vars.sqf";
     []spawn {
         systemChat localize "DA3F_Mrk_MedicCenter";
@@ -28,5 +35,3 @@
         sleep 3;
         []call DA3F_fnc_load_info; // Vérification des données du joueur
     };
-player addItem "ItemMap";
-player assignItem "ItemMap";

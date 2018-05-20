@@ -21,5 +21,7 @@
     *
     */
 
-    //[]call DA3F_fnc_setupAction;
-    //[]call DA3F_fnc_Respawn;
+player addItem "ItemMap";
+player assignItem "ItemMap";
+[]spawn DA3F_fnc_init_SpawnMenu;
+//player addAction ["DA3F Medic Menu",DA3F_fnc_init_GUI_Medical,"",9999,false,false,"",""];

@@ -1,0 +1,68 @@
+/*
+	Salut à toi,
+	bienvenue dans la mission template Opérations by [DA3F] Aroun Le BriCodeur.
+
+	Petit fichier expliquant les quelques "trucs" utiles pour le bon dev de la mission.
+
+	Avant toutes choses :
+    Merci de prendre contact avec moi si vous souhaitez sortir des scripts de la mission.
+    Il sera considéré comme vol toute utilisation de mon travail hors de la mission, sans mon accord !
+
+    En cas de partie solo/test :
+	
+	    Bien que la mission fonctionne en éditeur si vous ne l'éditez pas,
+	    optez pour un lancement avec Briefing (Jouer avec briefing) dans vos options (JOUER) afin de jouer plainement votre expérience de jeu. 
+
+
+    Si vous souhaitez jouez de façon bête et méchante sans vous prendre la tête avec la configuration :
+    	
+    	Zeus est disponible sur le slot Blufor(WEST). Bon game ;)
+
+
+    Si vous souhaitez configurer le pack pour vos missons :
+
+    Configuration des shops :
+
+    	client\DA3F_Config\CfgShops.hpp
+    	Dans ce fichier vous pourrez configurer les sets disponibles dans les shops appelé via les PNJ
+    	Inspirez vous des syntaxes existantes et prenez connaissance des commentaires interne aux fichiers.
+    	Les fichiers : 
+    		DA3F_CfgWeapons.hpp 
+    		et 
+    		DA3F_CfgVehicles.hpp
+
+    		sont dépendant de CfgShops.hpp permettant une organisation des class mais ils sont liés ne perdez pas ça de tête.
+
+
+    Si vous souhaitez configurer/créer des groupes reconnu dans les shops (ou autre libre à votre dev ) :
+    	client\DA3F_Config\Cfg_Spec.hpp
+
+    	Il vous faut rentrer le nom de variable des unités dans les class existante ou créer vos propres class.
+    	
+    	Pour faire une condition avec un groupe utilisez cette fonction :
+
+   	 		["NomDeClass"] call DA3F_fnc_CheckCondition;
+    	exemple avec la Admin/Game master :
+	    	["Admin_Op"] call DA3F_fnc_CheckCondition;
+
+
+   Si vous souhaitez ajoutez des points de spawn au menu de départ :
+	   client\DA3F_Config\DA3F_Cfg_Mission.hpp
+
+	   ajoutez un marker sur votre map et renseignez le nom du marker 
+	   dans :
+	   class DA3F_initCfg_Spawn
+	   en respectant la syntaxe du fichier, 
+	   faites un copier/coller et éditer les informations pour éviter tout problèmes.
+	   
+	   !! Attention à toi no vices !!
+	   Prend compte que la dernière ligne n'a pas de virgule, il est important de garder ça ainsi quelque soit le nombres de ligne que vous y metterez ;) ! 
+
+	   Un fichier d'items virtuel est en place mais la mission ne dispose pas encore de shop virtuel 
+	   mais cela viendra sur les MAJ 
+
+	   Aucun système médical n'est présent pour le moment.
+	   La mission disposera d'un système médical évitant de devoir inclure des mods.
+	   Pas de panic !
+	   Il sera facilement activable/désactivable pour vous permettre de choisir vous votre type de système médical. 
+*/

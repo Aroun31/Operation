@@ -1,6 +1,7 @@
+<!-- call BIS_fnc_localize; -->
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="°Opération° by [DA3F]Aroun Le BriCodeur">
-    <Package name="°Opération°">
+<Project name="°Opérations° by [DA3F]Aroun Le BriCodeur">
+    <Package name="°Opérations°">
         <Key ID="DA3F_WelcomeChat">
             <Original>Welcome to the mission Aroun's °Opération° 'Aroun Le BriCodeur' for the Arma 3 Community</Original>
             <French>Bienvenue sur la mission : °Opération° réalisé par : Aroun Le BriCodeur pour la communauté Arma 3</French>
@@ -32,6 +33,18 @@
         <Key ID="STR_DA3F_ValidBuy">
             <Original>Validate my purchases</Original>
             <French>Valider mes achats</French>
+        </Key>
+        <Key ID="STR_DA3F_Item_Sang">
+            <Original>Blood 100ml</Original>
+            <French>Sang 100ml</French>
+        </Key>
+        <Key ID="STR_DA3F_Item_Ration">
+            <Original>Food ration</Original>
+            <French>Ration alimentaire</French>
+        </Key>
+        <Key ID="STR_DA3F_Item_Wather">
+            <Original>Wather bottle</Original>
+            <French>Bouteille d'eau</French>
         </Key>
         <Key ID="DA3F_NotCash">
             <Original>You're missing cash guy</Original>

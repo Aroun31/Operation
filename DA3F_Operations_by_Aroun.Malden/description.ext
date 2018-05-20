@@ -1,8 +1,8 @@
 author = "[DA3F] Aroun Le BriCodeur (MCF GaminG)";
 Dev = "[DA3F] Aroun Le BriCodeur (MCF GaminG)"; // (n'est pas visible) inscript en mission.sqm
-onLoadName = "°Opération°";
+onLoadName = "°Opérations°";
 loadScreen = "\A3\ui_f\data\GUI\Cfg\Debriefing\endDeath_ca.paa";
-onLoadMission = "<t size='.85' align = 'center' color='#D2D601'>°Opération°</t><br/><t size='1' align = 'center' color='#01A4D6'>Coop</t><br/><t size='1' align = 'center' color='#01A4D6'>développé par [DA3F]Aroun Le BriCodeur</t>";
+onLoadMission = "<t size='.85' align = 'center' color='#D2D601'>°Opérations°</t><br/><t size='1' align = 'center' color='#01A4D6'>Coop</t><br/><t size='1' align = 'center' color='#01A4D6'>développé par [DA3F]Aroun Le BriCodeur</t>";
 // Tu ne touche pas sauf si tu sais ce que tu fais !
 joinUnassigned = 1;
 respawn = BASE;
@@ -15,7 +15,7 @@ enableDebugConsole = 1;
     Si vous touchez aux valeurs suivante sachez ce que vous faites ou effectuer plusieurs test !!!
 */
 respawnDialog = 1;
-ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveMode = 0;                         //0: disabled, 1: enabled, 2: controlled by player attributes
 ReviveUnconsciousStateMode = 1;         //0: basic, 1: advanced, 2: realistic
 ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
 ReviveRequiredItems = 0;                //0: none, 1: medkit, 2: medkit or first aid kit
@@ -38,7 +38,7 @@ class Header
 {
 	gameType = COOP;
 	minPlayers = 1;
-	maxPlayers = 10;
+	maxPlayers = 22;
 };
 
 #include "CfgRemoteExec.hpp"
@@ -53,6 +53,7 @@ class Header
 
 class CfgFunctions {
     #include "DA3F_functions_Master.hpp"
+//    #include "client\DA3F_BCC\functions_BCC.hpp"
 };
 
 

@@ -30,6 +30,8 @@
             #include "client\DA3F_PNJ\functions_PNJ.hpp"
             #include "client\DA3F_fnc\functions_fncOo.hpp"
             #include "client\DA3F_Missions\functions_Objectifs.hpp"
+            #include "client\DA3F_PlayerMenu\functions_Player.hpp"
+            #include "client\DA3F_Medic\functions_medic.hpp"
             //#include "client\DA3F_BCC\functions_BCC.hpp"
         };
     
