@@ -1,7 +1,7 @@
-	/*
+    /*
     *
     *       Project :  
-    *               °Opération° 
+    *                 °Opération°  
     *
     *       Team   :
     *               Dev'Arma 3 France / http://devarma3france.fr/
@@ -10,7 +10,7 @@
     *               [DA3F] Aroun Le BriCodeur
     *
     *       File :
-    *           fn_Name.sqf
+    *           DA3F_Cfg_Mission.hpp
     *
     *       DESCRIPTION :
     *               -------------
@@ -19,11 +19,11 @@
     *       EXEMPLES :
     *               -------------
     *
-	*/
+    */
 
 	class DA3F_initCfg_Mission
 	{
-        DA3F_Name_Mission = "°Opération°";
+        DA3F_Name_Mission = "°Opérations°";
 		DA3F_MaxUnits     = 50;
 	};
 

@@ -24,35 +24,64 @@
     class DA3F_Cfg_Items
     {
 
-        class Ble_brut
+        class Med_item_bandage
         {
-            displayname = "Blé (non traité)";
-            Poids       = 3;
-            prix_achat  = 150;
-            prix_vente  = 75;
+            displayname = "Bandage";
+            Poids       = 0.5;
+            prix_achat  = 75;
+            prix_vente  = 25;
+            icon        = ""; // picture this item
+            model       = ""; // model 3D for this item
         };
-            class Ble_pur
+            class Med_item_Epi
             {
-                displayname = "Blé (traité)";
-                Poids       = 3;
+                displayname = "Epinéphrine";
+                Poids       = 0.5;
                 prix_achat  = 150;
                 prix_vente  = 75;
+                icon        = ""; // picture this item
+                model       = ""; // model 3D for this item
+            };
+
+            class Med_item_Morphine
+            {
+                displayname = "Morphine";
+                Poids       = 0.5;
+                prix_achat  = 150;
+                prix_vente  = 75;
+                icon        = ""; // picture this item
+                model       = ""; // model 3D for this item
+            };
+
+            class Med_item_sang100ml
+            {
+                displayname = $STR_DA3F_Item_Sang;
+                Poids       = 0.5;
+                prix_achat  = 150;
+                prix_vente  = 75;
+                icon        = ""; // picture this item
+                model       = ""; // model 3D for this item
             };
 
 
-        class Mais_brut
+        class Gen_item_Ration
         {
-            displayname = "Maïs (non traité)";
-            Poids       = 3;
-            prix_achat  = 150;
-            prix_vente  = 75;
+            displayname = $STR_DA3F_Item_Ration;
+            Poids       = 1;
+            prix_achat  = 50;
+            prix_vente  = 15;
+            icon        = ""; // picture this item
+            model       = ""; // model 3D for this item
         };
-            class Mais_pur
+
+            class Gen_item_Wather
             {
-                displayname = "Maïs (traité)";
+                displayname = $STR_DA3F_Item_Wather;
                 Poids       = 3;
-                prix_achat  = 150;
-                prix_vente  = 75;
+                prix_achat  = 10;
+                prix_vente  = 3;
+                icon        = ""; // picture this item
+                model       = ""; // model 3D for this item
             };
             
     };
